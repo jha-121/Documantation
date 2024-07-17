@@ -365,18 +365,6 @@
         You can also provide hex code for colors (as you can see from the above example), or else you can use specific 
         words for each color, which is acceptable by the browser.
 
- ###   Program for Anchors tag       
-        
-**Example**
- ```jsx
-            <!DOCTYPE html>
-            <html>
-
-            <body>
-                  <a href="https://www.instagram.com/_mohit_prajapati12?igsh=cGtyMHVjNnplcWN2">Welcome to Mohit Prajapati</a>
-               </body>
-
-            </html>
  ```    
  ##  5.Images and Multimedia
  ###   HTML Image 
