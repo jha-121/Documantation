@@ -728,18 +728,6 @@ A form with input fields for text:
 </body> 
 </html> 
 ```
-###  Vector Graphics:
-     This is a new addition to the revised version which has hugely impacted the use of Adobe Flash in websites. It can be used 
-     to draw graphics with various shapes and colors via scripting usually JS. Vector graphics are scalable, easy to create and 
-     edit. It also supports interactivity and animation. Having a smaller file size makes transferring and loading graphics 
-     much faster on the web. That’s the reason why many people prefer to use vector graphics.
-
-**Example:**
-```jsx
-<svg id = "svgelem" height = "200" xmlns = "http://www.abc.org/2000/svg"> 
-      <circle id = "redcircle" cx = "50" cy = "50" r = "50" fill = "red" /> 
- </svg> 
-```
 ## 11.References
  ### https://www.w3schools.com/html/default.asp
  ### https://www.geeksforgeeks.org/html-introduction/
