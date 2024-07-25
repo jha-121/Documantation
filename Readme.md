@@ -23,16 +23,7 @@
 
  ###   History of HTML
        HTML was created by Sir Tim Berners-Lee in late 1991 but was not officially released.
-       It was published in 1995 as HTML 2.0. HTML 4.01 was published in late 1999 and was a major version of HTML.
- ###   Year	        Version
-       1989	        Tim Berners-Lee invented www
-       1991	        Tim Berners-Lee invented HTML
-       1993	        Dave Raggett drafted HTML+
-       1995	        HTML Working Group defined HTML 2.0
-       1997	        W3C Recommendation: HTML 3.2
-       1999	        W3C Recommendation: HTML 4.01
-       2000	        W3C Recommendation: XHTML 1.0
-       2008	        WHATWG HTML5 First Public Draft
+     
 ## 2.  HTML Basics
        
        - All HTML documents must start with a document type declaration: <!DOCTYPE html>.
@@ -77,8 +68,7 @@
  ```  
  ###  Attributes
        
-       -All HTML elements can have attributes
-       -Attributes provide additional information about 
+        -Attributes provide additional information about 
         elements
        -Attributes are always specified in the start tag
        -Attributes usually come in name/value pairs like: name="value"
@@ -159,15 +149,6 @@
 ```jsx
               <p title="I'm a tooltip">This is a paragraph.</p>
 ```
-###   Chapter Summary
-      All HTML elements can have attributes
-      The href attribute of <a> specifies the URL of the page the link goes to
-      The src attribute of <img> specifies the path to the image to be displayed
-      The width and height attributes of <img> provide size information for images
-      The alt attribute of <img> provides an alternate text for an image
-      The style attribute is used to add styles to an element, such as color, font, size, and more
-      The lang attribute of the <html> tag declares the language of the Web page
-      The title attribute defines some extra information about an element.
 
 ###   Comments      
       
@@ -194,11 +175,7 @@
      -<b> - Bold text
      -<strong> - Important text
      -<i> - Italic text
-     -<em> - Emphasized text
-     -<mark> - Marked text
-     -<small> - Smaller text
      -<del> - Deleted text
-     -<ins> - Inserted text
      -<sub> - Subscript text
      -<sup> - Superscript text
 ###  HTML <b> and <strong> Elements
@@ -215,39 +192,7 @@
 ```jsx
                <strong>This text is important!</strong> 
 ```    
-###  HTML <i> and <em> Elements
-      The HTML <i> element defines a part of text in an alternate voice or mood. 
-      The content inside is typically displayed in italic.
 
-      Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, 
-      a thought, a ship name, etc.
-
-**Example**
- ```jsx
-            <i>This text is italic</i>
-```
-      The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
-
-      Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
-
-**Example**
-```jsx
-            <em>This text is emphasized</em>
-```
-###  HTML <small> Element
-      The HTML <small> element defines smaller text:
-
-**Example**
-```jsx
-               <small>This is some smaller text.</small>
-```
-###   HTML <mark> Element
-         The HTML <mark> element defines text that should be marked or highlighted:
-         
-**Example**
-```jsx
-      <p>Do not forget to buy <mark>milk</mark> today.</p>
-```
 ###  HTML <del> Element
           The HTML <del> element defines text that has been deleted from a document. 
           Browsers will usually strike a line through deleted text:
@@ -256,14 +201,7 @@
 ```jsx
                   <p>My favorite color is <del>blue</del> red.</p>
 ```
-###  HTML <ins> Element
-          The HTML <ins> element defines a text that has been inserted into a document.
-           Browsers will usually underline inserted text:
-           
-**Example**
-```jsx
-                  <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-```
+
 ###  HTML <sub> Element
            The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line,
             and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
@@ -310,7 +248,7 @@
  ###  What is the HTML<link> tag?
 
       The HTML <link> tag establishes a link between the current document and an external resource.This tag is usually used to 
-      link to an external stylesheet, add a favicon to a website, or preload resources to improve page load performance. Here's 
+      link to an external stylesheet.
       its basic structure: 
 
 **Example**
@@ -321,28 +259,13 @@
           media="media_type" 
           sizes="widthxheight" 
           hreflang="language_code" 
-          as="resource_type">     
 ```
-###   Hypertext 
-        Hypertext can be defined as the text shown on your web browser's screen, which contains hyperlinked data 
-        (data here means from which document it will go to which document) and hence leads readers to different 
-        web pages by clicking on them. In this chapter, you will learn how to create your hyperlinks and use them 
-        to build websites and web pages.
 
 ###   What is Anchor Tag?
       The Anchor tag in HTML can be defined as a means to create a hyperlink that can link your current page on 
       which the text is being converted to hypertext via <a> (anchor tag) to another page. This anchoring from 
       one page to another is made possible by the attribute "href", which can be abbreviated (hypertext reference).
-
-###   Href attribute
-       The attribute 'href' of the Anchor tag is implemented for defining the address or path to which this hypertext will
-        get linked. In other words, it can be said that it directs you out of your page to that destination page, whose link
-        you have mentioned within the double quotes of the href attribute as value. The syntax for an anchor tag with 
-        href attribute looks something like this:
-
-**Example**
- ```jsx     
-      <a href="URL">Text Here</a>
+      
  ```   
  ###  Appearance of HTML <a> tag
 
@@ -366,7 +289,7 @@
         words for each color, which is acceptable by the browser.
 
  ```    
- ##  5.Images and Multimedia
+ ## 5. Images and Multimedia
  ###   HTML Image 
       The HTML <img> tag is used to embed an image in a web page.
 
@@ -426,10 +349,6 @@
 
        **Web pages often contain multimedia elements of different types and formats.**
 
-###    Browser Support
-       The first web browsers had support for text only, limited to a single font in a single color.
-       Later came browsers with support for colors, fonts, images, and multimedia!
-
 ###    Multimedia Formats
        -Multimedia elements (like audio or video) are stored in media files.
        -The most common way to discover the type of a file, is to look at the file extension.
@@ -453,14 +372,6 @@
              Your browser does not support the video tag.
                </video>   
 ```   
-###   How it Works
-       The controls attribute adds video controls, like play, pause, and volume.
-       It is a good idea to always include width and height attributes. If height and width are not set, 
-       the page might flicker while the video loads.
-       The <source> element allows you to specify alternative video files which the browser may choose from. 
-       The browser will use the first recognized format.
-       The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> 
-       element.
 
 ###    HTML <video> Autoplay
        To start a video automatically, use the autoplay attribute:
@@ -484,12 +395,6 @@
           Your browser does not support the audio element.
           </audio>
 ```
-###    HTML Audio - How It Works
-       The controls attribute adds audio controls, like play, pause, and volume.
-       The <source> element allows you to specify alternative audio files which the browser may choose from. 
-       The browser will use the first recognized format.
-       The text between the <audio> and </audio> tags will only be displayed in browsers that do not support
-       the <audio> element.
 
 ###    HTML <audio> Autoplay
        To start an audio file automatically, use the autoplay attribute:
@@ -632,24 +537,10 @@ form elements
 .
 </form>
 ```
-###  Text Fields
-     The <input type="text"> defines a single-line input field for text input.
 
-**Example**
-A form with input fields for text:
-```jsx
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form>
-```
 ## 9.Semantic HTML
 ###  What are Semantic Elements?
      A semantic element clearly describes its meaning to both the browser and the developer.
-     Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
-     Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
 
 ###  Semantic Elements in HTML
      Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate
@@ -657,17 +548,11 @@ A form with input fields for text:
      In HTML there are some semantic elements that can be used to define different parts of a web page:  
 ```jsx
 .<article>
-.<aside>
 .<details>
-.<figcaption>
-.<figure>
 .<footer>
 .<header>
-.<main>
-.<mark>
 .<nav>
 .<section>
-.<summary>
 .<time>
 ```
 <img src= "img_sem_elements.gif" alt="formats" width="" height="" >  
@@ -676,36 +561,11 @@ A form with input fields for text:
      The <section> element defines a section in a document.
      According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
 
-**Examples of where a <section> element can be used:**
-```jsx
-.Chapters
-.Introduction
-.News items
-.Contact information
-```
-     A web page could normally be split into sections for introduction, content, and contact information.
-
-###  Example
-```jsx
- Two sections in a document:
-<section>
-<h1>WWF</h1>
-<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-</section>
-
-<section>
-<h1>WWF's Panda symbol</h1>
-<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
-</section>
-```
 ## 10.HTML5 Features
    Now let’s have a look at all the new features that were added in HTML5 that make it better than HTML :
 
 ###  .Intro of audio and video: 
      Audio and Video tags are the two major addition to HTML5. It allows developers to embed a video or audio on their website. 
-     HTML5 video can use CSS and CSS3 to style the video tag. You can change the border, opacity, reflections, gradients, 
-     transitions, transformations, and even animations. HTML5 makes adding video super-fast and without having to build a video 
-     player. This saves time for the developer and offers the client a superior and more affordable solution.
 
 **Example:**
 ```jsx
