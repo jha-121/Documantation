@@ -20,9 +20,6 @@
        - HTML stands for Hyper Text Markup Language.
        - HTML is the standard markup language for creating Web pages.
        - HTML describes the structure of a Web page.
-
- ###   History of HTML
-       HTML was created by Sir Tim Berners-Lee in late 1991 but was not officially released.
      
 ## 2.  HTML Basics
        
@@ -45,33 +42,31 @@
  ###   HTML Tags and Elements
        
        The HTML element is everything from the start tag to the end tag:
-       <tagname>Content goes here...</tagname>
+    
        Examples of some HTML elements:
        <h1>My First Heading</h1>
        <p>My first paragraph.</p>
 
- ###       Start tag	           Element content	         End tag
-            <h1>	               My First Heading	          </h1>
-            <p>	                   My first paragraph.	      </p>
-            <br>	                   none	                   none
-            **Example**
+ ###     Start tag	     Element content	        End tag
+          <h1>	         My First Heading	       </h1>
+          <p>	          My first paragraph.	      </p>
+          
+         
+   **Example**
   ```jsx          
       <!DOCTYPE html>
      <html>
     <body>
-
        <h1>My First Heading</h1>
        <p>My first paragraph.</p>
-
       </body>
     </html>
  ```  
  ###  Attributes
-       
+   
         -Attributes provide additional information about 
         elements
-       -Attributes are always specified in the start tag
-       -Attributes usually come in name/value pairs like: name="value"
+     
 
 ###  The href Attribute
       
@@ -91,18 +86,11 @@
         
                   <img src="img_girl.jpg">
   ```
-###   The width and height Attributes
-      The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in 
-      pixels):
-      
-**Example**
- ```jsx
-                  <img src="img_girl.jpg" width="500" height="600">
+
  ```
  ###  The alt Attribute
       The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason 
-      cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a 
-      screen reader.
+      cannot be displayed. This can be due to a slow connection, or an error in the src attribute.
       
 **Example**
  ```jsx
@@ -118,7 +106,7 @@
 ```
 ###  The lang Attribute
       You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. 
-      This is meant to assist search engines and browsers.
+  
       **The following example specifies English as the language:**
 ```jsx
            <!DOCTYPE html>
@@ -128,18 +116,7 @@
             </body>
             </html>
 ```
-      Country codes can also be added to the language code in the lang attribute. So, the first two characters define the 
-      language of the HTML page, and the last two characters define the country.
 
-**The following example specifies English as the language and United States as the country:**
-```jsx
-
-       <!DOCTYPE html>
-       <html lang="en-US">
-        <body>
-        ...
-       </body>
-       </html>
 ```
 ###  The title Attribute
       The title attribute defines some extra information about an element.
@@ -157,67 +134,22 @@
 **Example**
  ```jsx
              <!-- Write your comments here -->
- ```     
-###   Add Comments
-    
-    With comments you can place notifications and reminders in your HTML code:
+ ```    
 
 **Example**
 ```jsx
              <!-- This is a comment -->
-
-             <p>This is a paragraph.</p>
-
-             <!-- Remember to add more information here -->
 ```
+
 ##  3. Text Formatting
      Formatting elements were designed to display special types of text:
      -<b> - Bold text
      -<strong> - Important text
      -<i> - Italic text
-     -<del> - Deleted text
      -<sub> - Subscript text
      -<sup> - Superscript text
-###  HTML <b> and <strong> Elements
-     
-     The HTML <b> element defines bold text, without any extra importance.
 
-**Example**
- ```jsx
-              <b>This text is bold</b>
-```
-     The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
-     
-**Example**
-```jsx
-               <strong>This text is important!</strong> 
-```    
-
-###  HTML <del> Element
-          The HTML <del> element defines text that has been deleted from a document. 
-          Browsers will usually strike a line through deleted text:
-
-**Example**
-```jsx
-                  <p>My favorite color is <del>blue</del> red.</p>
-```
-
-###  HTML <sub> Element
-           The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line,
-            and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
-           
- **Example**
-```jsx
-                  <p>This is <sub>subscripted</sub> text.</p>\
-```
-###  HTML <sup> Element
-            The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, 
-            and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:
-           
- **Example**
-```jsx
-                   <p>This is <sup>superscripted</sup> text.</p>
-```
+   
 ##   HTML Headings
        HTML headings are defined with the <h1> to <h6> tags.
 
@@ -234,9 +166,7 @@
  ```
  ##  HTML Paragraphs
        The HTML <p> element defines a paragraph.
-
-       A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before 
-       and after a paragraph.
+       A paragraph always starts on a new line, 
 
 **Example**
 ```jsx
@@ -245,57 +175,23 @@
  ```
  ##  4. Links and Anchors 
 
- ###  What is the HTML<link> tag?
+ ###  What is the HTML <link> tag?
 
-      The HTML <link> tag establishes a link between the current document and an external resource.This tag is usually used to 
-      link to an external stylesheet.
-      its basic structure: 
+      The HTML <link> tag establishes a link between the current document and an external resource.
 
 **Example**
  ```jsx
           <link rel="relationship_value" 
-          type="MIME_type" 
-          href="resource_location" 
-          media="media_type" 
-          sizes="widthxheight" 
-          hreflang="language_code" 
 ```
 
 ###   What is Anchor Tag?
-      The Anchor tag in HTML can be defined as a means to create a hyperlink that can link your current page on 
-      which the text is being converted to hypertext via <a> (anchor tag) to another page. This anchoring from 
-      one page to another is made possible by the attribute "href", which can be abbreviated (hypertext reference).
-      
- ```   
- ###  Appearance of HTML <a> tag
-
-      Since Anchor tags are used for giving hyperlinks, you might have noticed that they change color based on certain 
-      situations, such as unvisited, clicked, visited, etc. Let's see their color code concerning their activity:
-
-      -An unvisited link gets displayed with properties like underlined, and the color is blue.
-
-      -A link that is visited gets displayed as underlined with color as purple.
-
-      -A link that is an active link gets displayed as underlined with red color.
-
-       Still, many web developers will deposit their link colors in their web pages to match their site's color scheme.
-       Here's the format:
-
-**Example**
- ```jsx
-              <body bgcolor="red" text="yellow" link="blue" alink="#FFFF00" vlink="#FF00FF">
+      The Anchor tag in HTML can be defined as a means to create a hyperlink that can link your current page to another page.
  ```
-        You can also provide hex code for colors (as you can see from the above example), or else you can use specific 
-        words for each color, which is acceptable by the browser.
 
  ```    
  ## 5. Images and Multimedia
  ###   HTML Image 
       The HTML <img> tag is used to embed an image in a web page.
-
-      Images are not technically inserted into a web page; images are linked to web pages. The <img> 
-      tag creates a holding space for the referenced image.
-
       The <img> tag is empty, it contains attributes only, and does not have a closing tag.
 
       The <img> tag has two required attributes:
@@ -310,19 +206,14 @@
 ###  The src Attribute
       The required src attribute specifies the path (URL) to the image.
 
-      -Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it 
-       into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, 
-       otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser 
-       cannot find the image.
-
 **Example**
 ```jsx
           <img src="img_chania.jpg" alt="Flowers in Chania">
 ```
 ###  The alt Attribute
-       The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because 
-       of slow connection, an error in the src attribute, or if the user uses a screen reader).
-
+       The required alt attribute provides an alternate text for an image, if the user for some reason cannot view image(because 
+       of slow connection.)
+       
        The value of the alt attribute should describe the image:
       
 **Example**
@@ -330,47 +221,25 @@
 
            <img src="img_chania.jpg" alt="Flowers in Chania">
 ```
-###   Image Size - Width and Height
-      You can use the style attribute to specify the width and height of an image.
-      
-**Example**
- ```jsx     
-         <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
-```
-        Alternatively, you can use the width and height attributes:
-         
-**Example**
-```jsx
-         <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
-```
+
 ###    What is Multimedia?
        Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, 
-       music, sound, videos, records, films, animations, and more.
+        Audio, videos, records etc.
 
        **Web pages often contain multimedia elements of different types and formats.**
 
 ###    Multimedia Formats
        -Multimedia elements (like audio or video) are stored in media files.
-       -The most common way to discover the type of a file, is to look at the file extension.
-       -Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.
-
-###    Common Video Formats
-    	 -There are many video formats out there.
-       -The MP4, WebM, and Ogg formats are supported by HTML.
- <img src= "pic_video.jpg" alt="formats" width="" height="" >
- 
- -The MP4 format is recommended by YouTube.
+       -Multimedia files have formats and different extensions like: .mp3, .mp4 -etc
 
  ###   The HTML <video> Element
        To show a video in HTML, use the <video> element:
 
 **Example**
- ```jsx        
-               <video width="320" height="240" controls>
-               <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-             Your browser does not support the video tag.
-               </video>   
+ ```jsx
+     <video width="320" height="240" controls>
+     <source src="movie.mp4" type="video/mp4">
+     </video>      
 ```   
 
 ###    HTML <video> Autoplay
@@ -378,22 +247,17 @@
 
 **Example**
 ```jsx
-          <video width="320" height="240" autoplay>
-          <source src="movie.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
+     <video width="320" height="240" controls autoplay>
+     <source src="movie.mp4" type="video/mp4"></video>
 ```
 ###   The HTML <audio> Element
       To play an audio file in HTML, use the <audio> element:
 
 **Example**
 ```jsx      
-          <audio controls>
-          <source src="horse.ogg" type="audio/ogg">
+         <audio controls>
           <source src="horse.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+        </audio>
 ```
 
 ###    HTML <audio> Autoplay
@@ -401,22 +265,12 @@
         
 **Example**
  ```jsx       
-             <audio controls autoplay>
-             <source src="horse.ogg" type="audio/ogg">
-             <source src="horse.mp3" type="audio/mpeg">
-             Your browser does not support the audio element.
-             </audio>
+          <audio controls autoplay>
+            <source src="horse.mp3" type="audio/mpeg">
+          </audio>
 ```
 ##  6.Lists
        HTML lists allow web developers to group a set of related items in lists.
-
-**Example**
-
-       An unordered HTML list:                       An ordered HTML list:
-            Item                                         First item
-            Item                                         Second item
-            Item                                         Third item
-            Item                                         Fourth item
 
 ###   Unordered HTML List
        An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
@@ -444,7 +298,7 @@
 ```
 ##   7.Tables 
        HTML tables allow web developers to arrange data into rows and columns.
-<img src= "Screenshot 2024-06-15 123800.png" alt="" width="" height="" >
+       <img src= "Screenshot 2024-06-15 123800.png" alt="" width="" height="" >
 
        Define an HTML Table
        A table in HTML consists of table cells inside rows and columns.
@@ -470,19 +324,7 @@
                    </tr>
               </table>
 ```
-### Table Cells
-     Each table cell is defined by a <td> and a </td> tag.
 
-**Example**
-```jsx
-<table>
-  <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-    <td>Linus</td>
-  </tr>
-</table>
-```
 ### Table Rows
     Each table row starts with a <tr> and ends with a </tr> tag.
 
@@ -501,35 +343,15 @@
   </tr>
 </table>
 ```
-### Table Headers
-    Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
 
-**Example**
-```jsx
-<table>
-  <tr>
-    <th>Person 1</th>
-    <th>Person 2</th>
-    <th>Person 3</th>
-  </tr>
-  <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-    <td>Linus</td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td>14</td>
-    <td>10</td>
-  </tr>
-</table>
 ```
 ##  8.Forms 
     An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-<img src= "Screenshot 2024-06-17 150707.png" alt="formats" width="" height="" >  
+   <img src= "Screenshot 2024-06-17 150707.png" alt="formats" width="" height="" >  
 
 ### The <form> Element
     The HTML <form> element is used to create an HTML form for user input:
+
 ```jsx
 <form>
 .
@@ -540,26 +362,17 @@ form elements
 
 ## 9.Semantic HTML
 ###  What are Semantic Elements?
-     A semantic element clearly describes its meaning to both the browser and the developer.
+     Semantic tags in HTML are used to clearly define the structure and meaning of web content
 
-###  Semantic Elements in HTML
-     Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate
-     navigation, header, and footer.
-     In HTML there are some semantic elements that can be used to define different parts of a web page:  
+###  example of semantic elements
+  
 ```jsx
 .<article>
 .<details>
 .<footer>
 .<header>
 .<nav>
-.<section>
-.<time>
 ```
-<img src= "img_sem_elements.gif" alt="formats" width="" height="" >  
-
-###  HTML <section> Element
-     The <section> element defines a section in a document.
-     According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
 
 ## 10.HTML5 Features
    Now let’s have a look at all the new features that were added in HTML5 that make it better than HTML :
@@ -575,15 +388,12 @@ form elements
 <h2>Example of video and audio tag</h2> 
     
   <video  width = "300" height = "200" controls autoplay> 
-       <source src = "/html5/foo.ogg" type ="video/ogg" /> 
-       <source src = "/html5/foo.mp4" type = "video/mp4" /> 
-        Your browser does not support the video element. 
+       <source src = "/html5/foo.mp4" type = "video/mp4" />    
    </video> 
     
    <audio controls autoplay> 
        <source src = "/html5/audio.ogg" type = "audio/ogg" /> 
        <source src = "/html5/audio.wav" type = "audio/wav" /> 
-        Your browser does not support the audio element. 
    </audio> 
 </body> 
 </html> 
