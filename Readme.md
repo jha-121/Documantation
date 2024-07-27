@@ -144,7 +144,8 @@
 ##  3. Text Formatting
      Formatting elements were designed to display special types of text:
      -<b> - Bold text
-     -<strong> - Important text
+     -<small> - smaller text
+     -<del> -deleted text
      -<i> - Italic text
      -<sub> - Subscript text
      -<sup> - Superscript text
@@ -175,7 +176,7 @@
  ```
  ##  4. Links and Anchors 
 
- ###  What is the HTML <link> tag?
+ ###  What is the HTML link tag?
 
       The HTML <link> tag establishes a link between the current document and an external resource.
 
@@ -214,7 +215,6 @@
        The required alt attribute provides an alternate text for an image, if the user for some reason cannot view image(because 
        of slow connection.)
        
-       The value of the alt attribute should describe the image:
       
 **Example**
  ```jsx 
@@ -238,7 +238,7 @@
 **Example**
  ```jsx
      <video width="320" height="240" controls>
-     <source src="movie.mp4" type="video/mp4">
+     src="movie.mp4" type="video/mp4">
      </video>      
 ```   
 
@@ -248,7 +248,8 @@
 **Example**
 ```jsx
      <video width="320" height="240" controls autoplay>
-     <source src="movie.mp4" type="video/mp4"></video>
+     src="movie.mp4" type="video/mp4">
+    </video>
 ```
 ###   The HTML <audio> Element
       To play an audio file in HTML, use the <audio> element:
@@ -298,10 +299,6 @@
 ```
 ##   7.Tables 
        HTML tables allow web developers to arrange data into rows and columns.
-       <img src= "Screenshot 2024-06-15 123800.png" alt="" width="" height="" >
-
-       Define an HTML Table
-       A table in HTML consists of table cells inside rows and columns.
 
 **Example**
 
@@ -347,16 +344,13 @@
 ```
 ##  8.Forms 
     An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-   <img src= "Screenshot 2024-06-17 150707.png" alt="formats" width="" height="" >  
 
 ### The <form> Element
     The HTML <form> element is used to create an HTML form for user input:
 
 ```jsx
 <form>
-.
 form elements
-.
 </form>
 ```
 
